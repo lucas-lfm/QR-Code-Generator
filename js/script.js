@@ -7,8 +7,18 @@ const container = document.querySelector(".container"),
 let preValue;
 let qrcode;
 
-downloadBtn.innerText = "Baixar QR Code";
-downloadBtn.style.display = "none";
+const iconDownload = document.createElement("i");
+iconDownload.classList.add("bi");
+iconDownload.classList.add('bi-download');
+
+const textDownload = document.createElement("span");
+textDownload.innerText = "Baixar QR Code";
+
+downloadBtn.appendChild(iconDownload);
+downloadBtn.appendChild(textDownload);
+
+downloadBtn.classList.add("downloadBtn", "display-none");
+
 container.appendChild(downloadBtn);
 
 const makeCode = () => {
@@ -33,7 +43,7 @@ const makeCode = () => {
     });
 
     generateBtn.innerText = "Gerar QR Code";
-    downloadBtn.style.display = "inline";
+    downloadBtn.classList.remove("display-none");
   }, 1000);
 };
 
