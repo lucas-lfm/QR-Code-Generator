@@ -35,8 +35,8 @@ const makeCode = () => {
   setTimeout(() => {
     qrcode = new QRCode(qrCodeArea, {
       text: qrValue,
-      width: 200,
-      height: 200,
+      width: 512,
+      height: 512,
       colorDark: "#000000",
       colorLight: "#ffffff",
       correctLevel: QRCode.CorrectLevel.H,

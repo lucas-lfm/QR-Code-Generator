@@ -47,7 +47,7 @@ button {
 }
 
 .container {
-  max-width: 410px;
+  max-width: 860px;
   background-color: var(--fg-color);
   border-radius: 8px;
   padding: 20px 25px;
@@ -93,8 +93,8 @@ button {
   pointer-events: none;
   justify-content: center;
   border: 1px solid #ccc;
-  height: 250px;
-  width: 250px;
+  height: 524px;
+  width: 524px;
   margin: 0 auto;
   margin-top: 3rem;
 }
